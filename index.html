@@ -318,6 +318,7 @@ footer p{max-width:560px;margin:0 auto 8px}
   .plans{grid-template-columns:1fr 1fr;align-items:stretch}
   .plan.main{order:0}
   .slide{width:500px}
+  .testi-card{width:500px}
 }
 @media(prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
@@ -332,10 +333,10 @@ footer p{max-width:560px;margin:0 auto 8px}
 .testi-wrap::after{right:0;background:linear-gradient(270deg,var(--bg),transparent)}
 .testi-track{display:flex;gap:20px;width:max-content;animation:testi-scroll 42s linear infinite}
 .testi-track:hover{animation-play-state:paused}
-.testi-card{height:380px;flex:0 0 auto;border-radius:18px;overflow:hidden;box-shadow:0 14px 30px rgba(23,63,46,.14);border:1px solid var(--line);background:var(--card)}
-.testi-card img{height:100%;width:auto;display:block}
+.testi-card{width:350px;flex:none;aspect-ratio:1241/1754;border-radius:14px;overflow:hidden;box-shadow:0 10px 26px rgba(23,63,46,.18);border:1px solid var(--line);background:var(--card)}
+.testi-card img{width:100%;height:100%;object-fit:cover;display:block}
 @keyframes testi-scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
-@media(max-width:720px){.testi-card{height:300px}.testi-wrap{margin-top:28px}}
+@media(max-width:720px){.testi-wrap{margin-top:28px}}
 
 </style>
 </head>
